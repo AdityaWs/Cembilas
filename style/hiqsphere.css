@@ -7,10 +7,12 @@
     align-items: center;
     justify-content: center;
     padding: 10rem 0;
+    background: #DADADA;
 }
 
-.animations img {
+.animations video {
     display: none;
+    border: none;
 }
 
 .animations button {
@@ -53,7 +55,7 @@
 }
 
 @media(max-width: 600px) {
-    .animations img {
+    .animations video {
         width: 100%;
     }
 }

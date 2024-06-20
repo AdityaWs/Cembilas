@@ -6,10 +6,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #DADADA;
 }
 
-.animations img {
+.animations video {
     display: none;
+    border: none !important;
+    background: none;
 }
 
 .animations button {
@@ -35,7 +38,7 @@
 }
 
 @media(max-width: 600px) {
-    .animations img {
+    .animations video {
         width: 100%;
     }
 }

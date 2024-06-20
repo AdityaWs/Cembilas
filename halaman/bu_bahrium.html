@@ -36,66 +36,7 @@
     <div class="animations">
         <button></button>
         <p>Klik text ini untuk memulai</p>
-        <img src="./../img/Bubahrium/0001.png">
-        <img src="./../img/Bubahrium/0002.png">
-        <img src="./../img/Bubahrium/0003.png">
-        <img src="./../img/Bubahrium/0004.png">
-        <img src="./../img/Bubahrium/0005.png">
-        <img src="./../img/Bubahrium/0006.png">
-        <img src="./../img/Bubahrium/0007.png">
-        <img src="./../img/Bubahrium/0008.png">
-        <img src="./../img/Bubahrium/0009.png">
-        <img src="./../img/Bubahrium/0010.png">
-        <img src="./../img/Bubahrium/0011.png">
-        <img src="./../img/Bubahrium/0012.png">
-        <img src="./../img/Bubahrium/0013.png">
-        <img src="./../img/Bubahrium/0014.png">
-        <img src="./../img/Bubahrium/0015.png">
-        <img src="./../img/Bubahrium/0016.png">
-        <img src="./../img/Bubahrium/0017.png">
-        <img src="./../img/Bubahrium/0018.png">
-        <img src="./../img/Bubahrium/0019.png">
-        <img src="./../img/Bubahrium/0020.png">
-        <img src="./../img/Bubahrium/0021.png">
-        <img src="./../img/Bubahrium/0022.png">
-        <img src="./../img/Bubahrium/0023.png">
-        <img src="./../img/Bubahrium/0024.png">
-        <img src="./../img/Bubahrium/0025.png">
-        <img src="./../img/Bubahrium/0026.png">
-        <img src="./../img/Bubahrium/0027.png">
-        <img src="./../img/Bubahrium/0028.png">
-        <img src="./../img/Bubahrium/0029.png">
-        <img src="./../img/Bubahrium/0030.png">
-        <img src="./../img/Bubahrium/0031.png">
-        <img src="./../img/Bubahrium/0032.png">
-        <img src="./../img/Bubahrium/0033.png">
-        <img src="./../img/Bubahrium/0034.png">
-        <img src="./../img/Bubahrium/0035.png">
-        <img src="./../img/Bubahrium/0036.png">
-        <img src="./../img/Bubahrium/0037.png">
-        <img src="./../img/Bubahrium/0038.png">
-        <img src="./../img/Bubahrium/0039.png">
-        <img src="./../img/Bubahrium/0040.png">
-        <img src="./../img/Bubahrium/0041.png">
-        <img src="./../img/Bubahrium/0042.png">
-        <img src="./../img/Bubahrium/0043.png">
-        <img src="./../img/Bubahrium/0044.png">
-        <img src="./../img/Bubahrium/0045.png">
-        <img src="./../img/Bubahrium/0046.png">
-        <img src="./../img/Bubahrium/0047.png">
-        <img src="./../img/Bubahrium/0048.png">
-        <img src="./../img/Bubahrium/0049.png">
-        <img src="./../img/Bubahrium/0050.png">
-        <img src="./../img/Bubahrium/0051.png">
-        <img src="./../img/Bubahrium/0052.png">
-        <img src="./../img/Bubahrium/0053.png">
-        <img src="./../img/Bubahrium/0054.png">
-        <img src="./../img/Bubahrium/0055.png">
-        <img src="./../img/Bubahrium/0056.png">
-        <img src="./../img/Bubahrium/0057.png">
-        <img src="./../img/Bubahrium/0058.png">
-        <img src="./../img/Bubahrium/0059.png">
-        <img src="./../img/Bubahrium/0060.png">
+        <video src="./../img/Bubahrium/0001-0060.mkv" autoplay muted loop></video>
     </div>
 
     <div class="link-list">
@@ -125,30 +66,10 @@
 
         document.addEventListener("click", function(){
             if(first) {
-
                 first = false;
                 document.querySelector("audio").play();
                 document.querySelector(".animations p").innerText = "0";
-
-                let images = document.querySelectorAll(".animations img");
-                let index = 0;
-
-                setInterval(function(){
-
-                    for(let i = 0; i < images.length; i++) {
-                        images[i].style.display = "none";
-                    }
-
-                    images[index].style.display = "block";
-
-                    index += 1;
-
-                    if(index >= images.length) {
-                        index = 0;
-                    }
-
-                }, 50);
-
+                document.querySelector(".animations video").style.display = "block";
             }
         });
 
