@@ -1,0 +1,41 @@
+
+.animations {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animations img {
+    display: none;
+}
+
+.animations button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50vh;
+    border: none;
+    background: none;
+}
+
+.animations p {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .animations img {
+        width: 100%;
+    }
+}

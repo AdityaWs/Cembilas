@@ -1,0 +1,27 @@
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.images div {
+    position: relative;
+    padding: 0 32px;
+}
+
+.images img {
+    width: 768px;
+    border: 8px white solid;
+    border-radius: 8px;
+    box-shadow: 0 0 16px black;
+}
+
+@media (max-width: 900px) {
+    .images img {
+        width: calc(100% - 16px);
+    }
+}

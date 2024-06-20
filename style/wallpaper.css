@@ -1,0 +1,26 @@
+
+.wallpaper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    row-gap: 2rem;
+}
+
+.wallpaper img {
+    width: 600px;
+    max-width: calc(100% - 2rem);
+}
+
+.wallpaper a {
+    width: 600px;
+    max-width: calc(100% - 2rem);
+}
+
+.wallpaper button {
+    padding: 1rem;
+    width: 100%;
+}

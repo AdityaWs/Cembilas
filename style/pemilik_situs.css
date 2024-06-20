@@ -1,0 +1,27 @@
+
+.pemilik {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pemilik img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 1024px) {
+    .pemilik {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 512px) {
+    .pemilik {
+        grid-template-columns: 1fr;
+    }
+}

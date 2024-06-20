@@ -1,0 +1,38 @@
+
+.member {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member table {
+    border-collapse: collapse;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+    border: 1px solid black;
+}
+
+.member * {
+    font-size: 1.5rem;
+}
+
+.member .no {
+    font-weight: bold;
+    width: 2rem;
+    text-align: center;
+}
+
+.member td {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.member ul {
+    list-style: none;
+}
+
+.member a {
+    color: blue;
+}
